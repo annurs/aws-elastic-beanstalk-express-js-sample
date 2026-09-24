@@ -117,11 +117,5 @@ pipeline {
             echo 'CI/CD pipeline failed. Review the failed stage and logs.'
         }
 
-        always {
-            archiveArtifacts(
-                artifacts: 'npm-audit.json',
-                allowEmptyArchive: true
-            )
-        }
-    }
+     }
 }
